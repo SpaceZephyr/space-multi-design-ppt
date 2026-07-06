@@ -27,38 +27,23 @@
 
 ## 案例展示
 
-两个案例均为本 Skill 实测产出（克隆仓库后用浏览器打开 `deck.html`，←/→ 翻页、F 全屏、G 网格总览）：
-
-| [FlowPilot 产品介绍](examples/flowpilot-notion/) | [橙洲咖啡投资人路演](examples/chengzhou-coffee-claude/) |
+| FlowPilot · Notion | 橙洲咖啡 · Claude |
 |---|---|
-| ![FlowPilot 产品介绍预览](examples/flowpilot-notion/preview.png) | ![橙洲咖啡投资人路演预览](examples/chengzhou-coffee-claude/preview.png) |
-| 一段 AI 效率工具文字介绍，用户指定 **Notion** 风格后直接生成。8 页，使用真实 Notion token：画布 `#f6f5f4`、文字 `rgba(0,0,0,0.95)`、标题字距 `-2.125px`。 | 一段咖啡连锁 BP，未指定风格 → 5+1 推荐 → 用户选智能匹配 → AI 选定 **Claude**（理由见 [style-recommendation.md](examples/chengzhou-coffee-claude/style-recommendation.md)）。8 页，coral `#cc785c` + 奶油画布 `#faf9f5` + 衬线编辑排版。 |
+| <img src="https://raw.githubusercontent.com/SpaceZephyr/space-multi-design-ppt/main/examples/flowpilot-notion/preview.png" alt="FlowPilot · Notion" width="100%"> | <img src="https://raw.githubusercontent.com/SpaceZephyr/space-multi-design-ppt/main/examples/chengzhou-coffee-claude/preview.png" alt="橙洲咖啡 · Claude" width="100%"> |
 
-每个案例目录还包含中间产物：`outline.md`（大纲）、`design-tokens.md`（从 DESIGN.md 提取的 token 记录）、`slides/`（每页独立的 1280×720 HTML）。
+## 风格墙
 
-### 多风格案例图
+| Apple | Claude | Notion | Stripe |
+|---|---|---|---|
+| <img src="https://raw.githubusercontent.com/SpaceZephyr/space-multi-design-ppt/main/examples/style-gallery/images/apple.png" alt="Apple" width="100%"> | <img src="https://raw.githubusercontent.com/SpaceZephyr/space-multi-design-ppt/main/examples/style-gallery/images/claude.png" alt="Claude" width="100%"> | <img src="https://raw.githubusercontent.com/SpaceZephyr/space-multi-design-ppt/main/examples/style-gallery/images/notion.png" alt="Notion" width="100%"> | <img src="https://raw.githubusercontent.com/SpaceZephyr/space-multi-design-ppt/main/examples/style-gallery/images/stripe.png" alt="Stripe" width="100%"> |
 
-同一段介绍本 Skill 的文案，分别套用不同品牌设计语言。重点看风格差异：画布、字体、强调色、组件形态和视觉节奏都会跟着品牌系统变化。
+| Linear | Tesla | Vercel | Figma |
+|---|---|---|---|
+| <img src="https://raw.githubusercontent.com/SpaceZephyr/space-multi-design-ppt/main/examples/style-gallery/images/linear.png" alt="Linear" width="100%"> | <img src="https://raw.githubusercontent.com/SpaceZephyr/space-multi-design-ppt/main/examples/style-gallery/images/tesla.png" alt="Tesla" width="100%"> | <img src="https://raw.githubusercontent.com/SpaceZephyr/space-multi-design-ppt/main/examples/style-gallery/images/vercel.png" alt="Vercel" width="100%"> | <img src="https://raw.githubusercontent.com/SpaceZephyr/space-multi-design-ppt/main/examples/style-gallery/images/figma.png" alt="Figma" width="100%"> |
 
-| Apple | Claude | Notion |
-|---|---|---|
-| ![Apple 风格案例图](examples/style-gallery/images/apple.png) | ![Claude 风格案例图](examples/style-gallery/images/claude.png) | ![Notion 风格案例图](examples/style-gallery/images/notion.png) |
-| 极致留白 + 产品发布会质感 | 暖调编辑排版 + 智识感 | 纸感工作区 + 柔和卡片 |
-
-| Stripe | Linear | Tesla |
-|---|---|---|
-| ![Stripe 风格案例图](examples/style-gallery/images/stripe.png) | ![Linear 风格案例图](examples/style-gallery/images/linear.png) | ![Tesla 风格案例图](examples/style-gallery/images/tesla.png) |
-| 紫蓝渐变 + 商业系统感 | 深色网格 + 精准效率工具 | 黑红减法 + 未来发布会 |
-
-| Vercel | Figma | NVIDIA |
-|---|---|---|
-| ![Vercel 风格案例图](examples/style-gallery/images/vercel.png) | ![Figma 风格案例图](examples/style-gallery/images/figma.png) | ![NVIDIA 风格案例图](examples/style-gallery/images/nvidia.png) |
-| 黑白精准 + 开发者极简 | 多彩节点 + 协作画布 | 绿黑高对比 + 算力发布会 |
-
-| Airbnb | Spotify | Miro |
-|---|---|---|
-| ![Airbnb 风格案例图](examples/style-gallery/images/airbnb.png) | ![Spotify 风格案例图](examples/style-gallery/images/spotify.png) | ![Miro 风格案例图](examples/style-gallery/images/miro.png) |
-| 珊瑚暖色 + 生活方式叙事 | 深色律动 + 内容网格 | 明黄白板 + 便签工作坊 |
+| NVIDIA | Airbnb | Spotify | Miro |
+|---|---|---|---|
+| <img src="https://raw.githubusercontent.com/SpaceZephyr/space-multi-design-ppt/main/examples/style-gallery/images/nvidia.png" alt="NVIDIA" width="100%"> | <img src="https://raw.githubusercontent.com/SpaceZephyr/space-multi-design-ppt/main/examples/style-gallery/images/airbnb.png" alt="Airbnb" width="100%"> | <img src="https://raw.githubusercontent.com/SpaceZephyr/space-multi-design-ppt/main/examples/style-gallery/images/spotify.png" alt="Spotify" width="100%"> | <img src="https://raw.githubusercontent.com/SpaceZephyr/space-multi-design-ppt/main/examples/style-gallery/images/miro.png" alt="Miro" width="100%"> |
 
 ## 安装
 
