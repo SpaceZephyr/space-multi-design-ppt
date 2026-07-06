@@ -36,6 +36,20 @@
 
 每个案例目录还包含中间产物：`outline.md`（大纲）、`design-tokens.md`（从 DESIGN.md 提取的 token 记录）、`slides/`（每页独立的 1280×720 HTML）。
 
+### 多风格案例图
+
+同一段介绍本 Skill 的文案，分别套用不同品牌设计语言。重点看风格差异：画布、字体、强调色、组件形态和视觉节奏都会跟着品牌系统变化。
+
+| Apple | Claude | Notion |
+|---|---|---|
+| ![Apple 风格案例图](examples/style-gallery/images/apple.png) | ![Claude 风格案例图](examples/style-gallery/images/claude.png) | ![Notion 风格案例图](examples/style-gallery/images/notion.png) |
+| 极致留白 + 产品发布会质感 | 暖调编辑排版 + 智识感 | 纸感工作区 + 柔和卡片 |
+
+| Stripe | Linear | Tesla |
+|---|---|---|
+| ![Stripe 风格案例图](examples/style-gallery/images/stripe.png) | ![Linear 风格案例图](examples/style-gallery/images/linear.png) | ![Tesla 风格案例图](examples/style-gallery/images/tesla.png) |
+| 紫蓝渐变 + 商业系统感 | 深色网格 + 精准效率工具 | 黑红减法 + 未来发布会 |
+
 ## 安装
 
 **Claude Code**：把本仓库克隆到 skills 目录
@@ -77,7 +91,7 @@ Apple · Claude · Cursor · ElevenLabs · Figma · Framer · Lovable · Meta ·
 │   ├── export_deck.py            # HTML → PNG →  PPTX / PDF
 │   └── generate_slide.py         # 图像模式生成器（来自 space-slide-deck）
 ├── evals/evals.json              # 测试用例（实测：断言通过率 100% vs 无 skill 基线 20%）
-└── examples/                     # 上述两个实测案例
+└── examples/                     # 实测案例与多风格图片画廊
 ```
 
 ## 质量基准
