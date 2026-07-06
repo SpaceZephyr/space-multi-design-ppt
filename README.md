@@ -29,10 +29,10 @@
 
 两个案例均为本 Skill 实测产出（克隆仓库后用浏览器打开 `deck.html`，←/→ 翻页、F 全屏、G 网格总览）：
 
-| 案例 | 输入 | 风格路径 | 产出 |
-|---|---|---|---|
-| [FlowPilot 产品介绍](examples/flowpilot-notion/) | 一段 AI 效率工具的文字介绍 | 用户指定 **Notion** → 直接生成 | 8 页，使用真实 Notion token：画布 `#f6f5f4`、文字 `rgba(0,0,0,0.95)`、标题字距 `-2.125px` |
-| [橙洲咖啡投资人路演](examples/chengzhou-coffee-claude/) | 一段咖啡连锁 BP | 未指定 → 5+1 推荐 → 用户选智能匹配 → AI 选定 **Claude**（理由见 [style-recommendation.md](examples/chengzhou-coffee-claude/style-recommendation.md)） | 8 页，coral `#cc785c` + 奶油画布 `#faf9f5` + 衬线编辑排版 |
+| [FlowPilot 产品介绍](examples/flowpilot-notion/) | [橙洲咖啡投资人路演](examples/chengzhou-coffee-claude/) |
+|---|---|
+| ![FlowPilot 产品介绍预览](examples/flowpilot-notion/preview.png) | ![橙洲咖啡投资人路演预览](examples/chengzhou-coffee-claude/preview.png) |
+| 一段 AI 效率工具文字介绍，用户指定 **Notion** 风格后直接生成。8 页，使用真实 Notion token：画布 `#f6f5f4`、文字 `rgba(0,0,0,0.95)`、标题字距 `-2.125px`。 | 一段咖啡连锁 BP，未指定风格 → 5+1 推荐 → 用户选智能匹配 → AI 选定 **Claude**（理由见 [style-recommendation.md](examples/chengzhou-coffee-claude/style-recommendation.md)）。8 页，coral `#cc785c` + 奶油画布 `#faf9f5` + 衬线编辑排版。 |
 
 每个案例目录还包含中间产物：`outline.md`（大纲）、`design-tokens.md`（从 DESIGN.md 提取的 token 记录）、`slides/`（每页独立的 1280×720 HTML）。
 
