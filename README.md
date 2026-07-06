@@ -50,6 +50,16 @@
 | ![Stripe 风格案例图](examples/style-gallery/images/stripe.png) | ![Linear 风格案例图](examples/style-gallery/images/linear.png) | ![Tesla 风格案例图](examples/style-gallery/images/tesla.png) |
 | 紫蓝渐变 + 商业系统感 | 深色网格 + 精准效率工具 | 黑红减法 + 未来发布会 |
 
+| Vercel | Figma | NVIDIA |
+|---|---|---|
+| ![Vercel 风格案例图](examples/style-gallery/images/vercel.png) | ![Figma 风格案例图](examples/style-gallery/images/figma.png) | ![NVIDIA 风格案例图](examples/style-gallery/images/nvidia.png) |
+| 黑白精准 + 开发者极简 | 多彩节点 + 协作画布 | 绿黑高对比 + 算力发布会 |
+
+| Airbnb | Spotify | Miro |
+|---|---|---|
+| ![Airbnb 风格案例图](examples/style-gallery/images/airbnb.png) | ![Spotify 风格案例图](examples/style-gallery/images/spotify.png) | ![Miro 风格案例图](examples/style-gallery/images/miro.png) |
+| 珊瑚暖色 + 生活方式叙事 | 深色律动 + 内容网格 | 明黄白板 + 便签工作坊 |
+
 ## 安装
 
 **Claude Code**：把本仓库克隆到 skills 目录
