@@ -1,13 +1,13 @@
 # Space Multi Design PPT
 
-> 品牌设计风格驱动的 AI 幻灯片生成 Skill —— 把任意内容变成带顶级品牌设计语言的 Slide。
+> 品牌设计风格驱动的 AI 幻灯片生成 Skill —— 把任意内容变成带顶级品牌设计语言的 Slide，支持输出 HTML / PPTX / PDF。
 
 结合 [brand-design-md](https://github.com/SpaceZephyr/brand-design-md)（62 个真实品牌设计规范）与 [design-buddy/space-slide-deck](https://github.com/SpaceZephyr/design-buddy/tree/main/space-slide-deck)（幻灯片生成流程）。核心理念：**不靠凭空发挥的"好看"**——通过 [getdesign.md](https://getdesign.md) 拉取 Apple、Notion、Claude、Stripe、Linear、Tesla 等品牌的精确设计 token（颜色、字体、字距、圆角、阴影的具体数值），用真实规范驱动幻灯片渲染。
 
 ## 它是怎么工作的
 
 ```
-你发内容 ──► 内容分析 ──► 风格决策 ──► 拉取品牌 DESIGN.md ──► 逐页生成 HTML ──► deck.html（可导出 PPTX/PDF）
+你发内容 ──► 内容分析 ──► 风格决策 ──► 输出格式确认 ──► 拉取品牌 DESIGN.md ──► 生成 Slide
                               │
              ┌────────────────┴────────────────┐
              │ 你指定了风格（"用 Stripe 风格"）  │ 直接生成
@@ -15,6 +15,14 @@
              │                                 │ + 第 6 项「智能匹配」由 AI 选定并说明理由
              └─────────────────────────────────┘
 ```
+
+## 输出格式
+
+| 格式 | 适合场景 | 说明 |
+|---|---|---|
+| `deck.html` | 线上演示、追求视觉效果 | 单文件网页幻灯片，支持翻页、全屏、网格总览 |
+| `.pptx` | 需要二次编辑、正式交付 | python-pptx 原生构建，文本框和形状可编辑 |
+| `.pdf` | 归档、发送、打印 | 从 HTML 幻灯片导出，适合固定版式交付 |
 
 **5+1 推荐示例**（发一份咖啡连锁 BP 后，Skill 的实际回复）：
 
@@ -55,7 +63,7 @@ git clone https://github.com/SpaceZephyr/space-multi-design-ppt.git ~/.codex/ski
 
 **Claude Cowork / Claude.ai**：把仓库打包上传为 Skill（Settings → Capabilities → Skills）。
 
-依赖：Node.js（`npx getdesign` 拉取设计规范）；导出 PPTX/PDF 需 `pip install playwright python-pptx && python -m playwright install chromium`（不导出则无需）。
+依赖：Node.js（`npx getdesign` 拉取设计规范）；输出 PPTX 需 `pip install python-pptx Pillow`；输出 PDF 需 Playwright/Chromium。
 
 ## 使用
 
@@ -63,6 +71,7 @@ git clone https://github.com/SpaceZephyr/space-multi-design-ppt.git ~/.codex/ski
 把这篇文章做成 PPT                        # → 触发 5+1 风格推荐
 用 Linear 风格把这份周报做成 slide         # → 指定风格直接生成
 做一个 Tesla 风格的产品发布 deck，导出 pptx # → 生成 + 导出
+用 Claude 风格生成 HTML 和 PDF             # → 同时输出 deck.html / PDF
 Notion 配色 + Linear 排版，做个路演 PPT    # → 混搭风格
 ```
 
@@ -79,6 +88,7 @@ Apple · Claude · Cursor · ElevenLabs · Figma · Framer · Lovable · Meta ·
 ├── references/
 │   ├── brand-registry.md         # 62 品牌注册表：slug、风格描述、匹配标签、信号速查
 │   ├── slide-html-guide.md       # 1280×720 HTML 幻灯片制作规范与布局模板
+│   ├── pptx-native-guide.md      # python-pptx 原生可编辑 PPTX 构建规范
 │   ├── outline-guide.md          # 内容分析、大纲格式、文案规则
 │   └── image-mode.md             # 可选 AI 图像模式（需 LabNana API key）
 ├── scripts/
