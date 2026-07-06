@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1280px; height: 720px; overflow: hidden; }
+  body {
+    /* Notion 深靛"夜幕" hero band — colors.secondary #213183 */
+    background: #213183;
+    color: #ffffff;
+    font-family: Inter, "PingFang SC", "Noto Sans SC", "Microsoft YaHei", -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  .slide { position: relative; width: 1280px; height: 720px; padding: 64px 96px; display: flex; flex-direction: column; justify-content: center; }
+  /* 贴纸色星点（仅装饰） */
+  .star { position: absolute; border-radius: 9999px; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 8px; align-self: flex-start;
+    background: #ffffff; color: #0075de;
+    font-size: 12px; font-weight: 600; line-height: 1.33; letter-spacing: 0.125px;
+    border-radius: 9999px; padding: 6px 14px; margin-bottom: 32px;
+    box-shadow: rgba(0,0,0,0.01) 0 0.175px 1.041px, rgba(0,0,0,0.02) 0 0.8px 2.925px, rgba(0,0,0,0.027) 0 2.025px 7.847px, rgba(0,0,0,0.04) 0 4px 18px;
+  }
+  h1 { font-size: 72px; font-weight: 700; line-height: 1.04; letter-spacing: -2.125px; max-width: 980px; }
+  h1 .hl { color: #62aef0; }
+  .sub { margin-top: 28px; font-size: 24px; font-weight: 400; line-height: 1.5; color: rgba(255,255,255,0.78); }
+  .meta { position: absolute; left: 96px; bottom: 56px; display: flex; align-items: center; gap: 12px; font-size: 15px; color: rgba(255,255,255,0.55); }
+  .logo { display: flex; align-items: center; gap: 10px; font-weight: 600; color: #ffffff; font-size: 16px; }
+  .logo-mark { width: 28px; height: 28px; border-radius: 8px; background: #ffffff; display: flex; align-items: center; justify-content: center; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <!-- sticker constellation：贴纸装饰色 -->
+    <div class="star" style="top:86px; right:150px; width:14px; height:14px; background:#ff64c8;"></div>
+    <div class="star" style="top:170px; right:320px; width:8px; height:8px; background:#62aef0;"></div>
+    <div class="star" style="top:120px; right:520px; width:10px; height:10px; background:#d6b6f6;"></div>
+    <div class="star" style="bottom:180px; right:120px; width:10px; height:10px; background:#2a9d99;"></div>
+    <div class="star" style="bottom:110px; right:340px; width:12px; height:12px; background:#dd5b00;"></div>
+    <div class="star" style="top:300px; right:110px; width:8px; height:8px; background:#1aae39;"></div>
+    <div class="star" style="bottom:250px; right:480px; width:6px; height:6px; background:#ffffff; opacity:.6;"></div>
+
+    <div class="badge">AI 驱动的团队效率工具</div>
+    <h1>FlowPilot<br>把每周 <span class="hl">5.5 小时</span><br>还给你的团队</h1>
+    <div class="sub">面向 10–50 人团队的 AI 工作流助手：纪要、分派、周报，全自动。</div>
+    <div class="meta">
+      <div class="logo"><div class="logo-mark"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 8h8M7 4l4 4-4 4" stroke="#213183" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>FlowPilot</div>
+      <span>·</span><span>产品介绍 · 2026</span>
+    </div>
+  </div>
+</body>
+</html>

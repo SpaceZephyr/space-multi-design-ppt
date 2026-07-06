@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500&family=Noto+Sans+SC:wght@400;500&family=Noto+Serif+SC:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1280px; height:720px; overflow:hidden; }
+  body {
+    background:#faf9f5; /* token: canvas */
+    color:#141413;      /* token: ink */
+    font-family:'Inter','Noto Sans SC','PingFang SC',sans-serif;
+  }
+  .slide { width:1280px; height:720px; padding:64px 96px; display:flex; flex-direction:column; position:relative; }
+  .brand { display:flex; align-items:center; gap:12px; }
+  .wordmark { font-family:'Cormorant Garamond','Noto Serif SC','Songti SC',serif; font-size:24px; font-weight:600; letter-spacing:-0.3px; }
+  .hero { flex:1; display:flex; flex-direction:column; justify-content:center; }
+  .badge {
+    display:inline-block; align-self:flex-start;
+    background:#cc785c; color:#ffffff; /* token: primary / on-primary */
+    font-size:12px; font-weight:500; letter-spacing:1.5px; /* token: caption-uppercase */
+    padding:4px 12px; border-radius:9999px; /* token: rounded.pill */
+    margin-bottom:32px;
+  }
+  h1 {
+    font-family:'Cormorant Garamond','Noto Serif SC','Songti SC',serif;
+    font-size:72px; font-weight:500; line-height:1.15; letter-spacing:-1.5px; /* token: display-xl */
+    max-width:960px;
+  }
+  h1 .coral { color:#cc785c; }
+  .sub { margin-top:28px; font-size:20px; font-weight:400; line-height:1.55; color:#3d3d3a; /* token: body */ }
+  .footer-row {
+    border-top:1px solid #e6dfd8; /* token: hairline */
+    padding-top:24px; display:flex; gap:48px; color:#6c6a64; /* token: muted */ font-size:14px; font-weight:500;
+  }
+  .footer-row b { color:#141413; font-weight:500; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="brand">
+    <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><g stroke="#cc785c" stroke-width="3.4" stroke-linecap="round"><line x1="13" y1="2" x2="13" y2="24"/><line x1="2" y1="13" x2="24" y2="13"/><line x1="5" y1="5" x2="21" y2="21"/><line x1="21" y1="5" x2="5" y2="21"/></g></svg>
+    <span class="wordmark">橙洲咖啡 CHENGZHOU COFFEE</span>
+  </div>
+  <div class="hero">
+    <span class="badge">天使轮融资路演</span>
+    <h1>把精品咖啡，<br>开进 <span class="coral">50 座</span>三线城市</h1>
+    <p class="sub">精品咖啡连锁的数字化品牌 —— 小店模型 × 中央烘焙 × 私域会员</p>
+  </div>
+  <div class="footer-row">
+    <span><b>12</b> 家直营店在营</span>
+    <span>单店月均营收 <b>18 万元</b></span>
+    <span>毛利率 <b>62%</b></span>
+    <span>会员复购率 <b>71%</b></span>
+  </div>
+</div>
+</body>
+</html>

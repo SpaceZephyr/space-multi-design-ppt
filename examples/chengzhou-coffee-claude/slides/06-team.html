@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500&family=Noto+Sans+SC:wght@400;500&family=Noto+Serif+SC:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1280px; height:720px; overflow:hidden; }
+  body { background:#faf9f5; color:#141413; font-family:'Inter','Noto Sans SC','PingFang SC',sans-serif; }
+  .slide { width:1280px; height:720px; padding:64px 96px; display:flex; flex-direction:column; }
+  .eyebrow { font-size:12px; font-weight:500; letter-spacing:1.5px; color:#cc785c; margin-bottom:16px; }
+  h2 { font-family:'Cormorant Garamond','Noto Serif SC','Songti SC',serif; font-size:44px; font-weight:500; line-height:1.15; letter-spacing:-1px; }
+  .cards { display:flex; gap:24px; margin-top:48px; flex:1; }
+  .card { flex:1; border-radius:12px; padding:40px 32px; display:flex; flex-direction:column; }
+  .card.cream { background:#efe9de; border:1px solid #e6dfd8; }
+  .card.dark { background:#181715; color:#faf9f5; }
+  .role { font-size:12px; font-weight:500; letter-spacing:1.5px; color:#cc785c; }
+  .card h3 { font-family:'Cormorant Garamond','Noto Serif SC','Songti SC',serif; font-size:32px; font-weight:500; letter-spacing:-0.5px; margin:16px 0 8px; }
+  .cred { font-size:18px; font-weight:500; line-height:1.4; }
+  .card.cream .cred { color:#252523; }
+  .card p { margin-top:14px; font-size:16px; line-height:1.7; color:#3d3d3a; }
+  .card.dark p { color:#a09d96; }
+  .why { margin-top:36px; text-align:center; font-family:'Cormorant Garamond','Noto Serif SC','Songti SC',serif; font-size:24px; letter-spacing:-0.3px; color:#141413; }
+  .why span { color:#cc785c; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="eyebrow">团队 · 为什么是我们</div>
+  <h2>运营 × 供应链，正好是这门生意的两条命脉</h2>
+  <div class="cards">
+    <div class="card cream">
+      <div class="role">创始人 · CEO</div>
+      <h3>连锁运营操盘手</h3>
+      <div class="cred">前瑞幸咖啡华东区运营总监</div>
+      <p>亲历中国最快的咖啡连锁扩张，懂选址、懂店型、懂人效——12 家店的单店模型正是这套方法论的产物。</p>
+    </div>
+    <div class="card dark">
+      <div class="role">联合创始人 · 供应链</div>
+      <h3>供应链老兵</h3>
+      <div class="cred">10 年食品供应链经验</div>
+      <p>从生豆采购到中央烘焙工厂搭建全链路把控，是"62% 毛利率 + 品质稳定"背后的那个人。</p>
+    </div>
+  </div>
+  <div class="why">扩张靠运营，品质靠供应链 —— <span>两块拼图我们都有。</span></div>
+</div>
+</body>
+</html>

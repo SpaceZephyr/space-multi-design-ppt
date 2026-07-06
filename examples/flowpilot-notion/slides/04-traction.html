@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1280px; height: 720px; overflow: hidden; }
+  body {
+    background: #f6f5f4; color: rgba(0,0,0,0.95);
+    font-family: Inter, "PingFang SC", "Noto Sans SC", "Microsoft YaHei", -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  .slide { width: 1280px; height: 720px; padding: 64px 96px 56px; display: flex; flex-direction: column; }
+  .eyebrow { display: inline-block; align-self: flex-start; background: #ffffff; color: #0075de; font-size: 12px; font-weight: 600; letter-spacing: 0.125px; border-radius: 9999px; padding: 5px 12px; border: 1px solid #e6e6e6; margin-bottom: 20px; }
+  h1 { font-size: 44px; font-weight: 700; line-height: 1.1; letter-spacing: -1.2px; margin-bottom: 40px; }
+  .row { display: flex; gap: 24px; flex: 1; align-items: stretch; }
+  .hero-stat {
+    flex: 1.35; background: #ffffff; border: 1px solid #e6e6e6; border-radius: 16px; padding: 40px 44px;
+    display: flex; flex-direction: column; justify-content: center;
+    box-shadow: rgba(0,0,0,0.01) 0 0.175px 1.041px, rgba(0,0,0,0.02) 0 0.8px 2.925px, rgba(0,0,0,0.027) 0 2.025px 7.847px, rgba(0,0,0,0.04) 0 4px 18px;
+  }
+  .hero-num { font-size: 132px; font-weight: 700; line-height: 1.0; letter-spacing: -4px; color: #0075de; }
+  .hero-num small { font-size: 40px; letter-spacing: -1px; color: rgba(0,0,0,0.95); font-weight: 700; margin-left: 8px; }
+  .hero-label { margin-top: 18px; font-size: 20px; font-weight: 600; letter-spacing: -0.125px; }
+  .hero-note { margin-top: 8px; font-size: 15px; line-height: 1.55; color: #615d59; }
+  .side { flex: 1; display: flex; flex-direction: column; gap: 24px; }
+  .stat {
+    flex: 1; background: #ffffff; border: 1px solid #e6e6e6; border-radius: 12px; padding: 26px 30px;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .stat .n { font-size: 52px; font-weight: 700; letter-spacing: -1.875px; line-height: 1.04; }
+  .stat .l { margin-top: 8px; font-size: 16px; color: #615d59; line-height: 1.5; }
+  .stat .dot { display: inline-block; width: 10px; height: 10px; border-radius: 9999px; margin-right: 10px; vertical-align: 6px; }
+  .src { margin-top: 24px; font-size: 13px; color: #a39e98; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">上线 6 个月</div>
+    <h1>数字替我们说话</h1>
+    <div class="row">
+      <div class="hero-stat">
+        <div class="hero-num">5.5<small>小时 / 周</small></div>
+        <div class="hero-label">每位用户平均每周省下的时间</div>
+        <div class="hero-note">相当于每人每周多出近一个完整的工作上午——不开状态会、不写周报、不追待办。</div>
+      </div>
+      <div class="side">
+        <div class="stat">
+          <div class="n"><span class="dot" style="background:#dd5b00;"></span>1,200</div>
+          <div class="l">付费团队，覆盖产品、研发与运营组织</div>
+        </div>
+        <div class="stat">
+          <div class="n"><span class="dot" style="background:#1aae39;"></span>92%</div>
+          <div class="l">月留存率——用过的团队，留了下来</div>
+        </div>
+      </div>
+    </div>
+    <div class="src">数据来源：FlowPilot 上线 6 个月运营数据（截至 2026 年）</div>
+  </div>
+</body>
+</html>

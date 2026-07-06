@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500&family=Noto+Sans+SC:wght@400;500&family=Noto+Serif+SC:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1280px; height:720px; overflow:hidden; }
+  body { background:#faf9f5; color:#141413; font-family:'Inter','Noto Sans SC','PingFang SC',sans-serif; }
+  .slide { width:1280px; height:720px; padding:64px 96px; display:flex; }
+  .left { width:52%; display:flex; flex-direction:column; justify-content:center; padding-right:48px; }
+  .eyebrow { font-size:12px; font-weight:500; letter-spacing:1.5px; color:#cc785c; margin-bottom:16px; }
+  h2 { font-family:'Cormorant Garamond','Noto Serif SC','Songti SC',serif; font-size:44px; font-weight:500; line-height:1.15; letter-spacing:-1px; }
+  .ask { margin-top:36px; font-family:'Cormorant Garamond','Noto Serif SC',serif; font-size:110px; font-weight:500; letter-spacing:-1.5px; line-height:1; color:#cc785c; }
+  .ask small { font-size:44px; letter-spacing:-1px; }
+  .terms { margin-top:20px; display:flex; gap:16px; }
+  .pill { background:#efe9de; border:1px solid #e6dfd8; border-radius:9999px; padding:8px 18px; font-size:15px; font-weight:500; color:#252523; }
+  .right { width:48%; display:flex; flex-direction:column; justify-content:center; gap:24px; }
+  .use { background:#efe9de; border:1px solid #e6dfd8; border-radius:12px; padding:32px; }
+  .use.dark { background:#181715; border:none; color:#faf9f5; }
+  .use h3 { font-family:'Cormorant Garamond','Noto Serif SC','Songti SC',serif; font-size:26px; font-weight:500; letter-spacing:-0.3px; }
+  .use p { margin-top:8px; font-size:15px; line-height:1.6; color:#3d3d3a; }
+  .use.dark p { color:#a09d96; }
+  .grow { display:flex; align-items:center; gap:12px; font-size:14px; font-weight:500; color:#6c6a64; }
+  .bar { flex:1; height:10px; border-radius:9999px; background:#e8e0d2; position:relative; overflow:hidden; }
+  .bar i { position:absolute; left:0; top:0; bottom:0; width:29%; background:#cc785c; border-radius:9999px; }
+  .grow b { color:#141413; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="left">
+    <div class="eyebrow">融资 · 本轮方案</div>
+    <h2>2000 万元，把 12 家店变成 42 家</h2>
+    <div class="ask">2000<small> 万元</small></div>
+    <div class="terms">
+      <span class="pill">出让 15% 股权</span>
+      <span class="pill">人民币轮</span>
+    </div>
+  </div>
+  <div class="right">
+    <div class="use">
+      <h3>✳ 新开 30 家直营店</h3>
+      <p>复制已验证的 30㎡ 小店模型，沿三线城市目标清单滚动开店。</p>
+    </div>
+    <div class="use dark">
+      <h3>✳ 中央烘焙工厂扩建</h3>
+      <p>产能先行——支撑 42 家店的烘焙与配送，锁住 62% 毛利与品质稳定性。</p>
+    </div>
+    <div class="grow">
+      <span>门店数</span>
+      <div class="bar"><i></i></div>
+      <span><b>12</b> → <b>42</b> 家</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1280px; height: 720px; overflow: hidden; }
+  body {
+    background: #f6f5f4; color: rgba(0,0,0,0.95);
+    font-family: Inter, "PingFang SC", "Noto Sans SC", "Microsoft YaHei", -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  .slide { width: 1280px; height: 720px; padding: 64px 96px 56px; display: flex; flex-direction: column; }
+  .eyebrow { display: inline-block; align-self: flex-start; background: #ffffff; color: #0075de; font-size: 12px; font-weight: 600; letter-spacing: 0.125px; border-radius: 9999px; padding: 5px 12px; border: 1px solid #e6e6e6; margin-bottom: 20px; }
+  h1 { font-size: 44px; font-weight: 700; line-height: 1.1; letter-spacing: -1.2px; margin-bottom: 36px; }
+  table { width: 100%; border-collapse: separate; border-spacing: 0; background: #ffffff; border: 1px solid #e6e6e6; border-radius: 12px; overflow: hidden;
+    box-shadow: rgba(0,0,0,0.01) 0 0.175px 1.041px, rgba(0,0,0,0.02) 0 0.8px 2.925px, rgba(0,0,0,0.027) 0 2.025px 7.847px, rgba(0,0,0,0.04) 0 4px 18px; }
+  th { background: #f6f5f4; font-size: 12px; font-weight: 600; letter-spacing: 0.125px; text-transform: uppercase; color: #615d59; padding: 14px 24px; text-align: left; border-bottom: 1px solid #e6e6e6; }
+  td { font-size: 16px; line-height: 1.5; padding: 17px 24px; border-bottom: 1px solid #e6e6e6; color: #31302e; }
+  tr:last-child td { border-bottom: none; }
+  th.fp, td.fp { background: rgba(0,117,222,0.05); }
+  th.fp { color: #0075de; }
+  td.fp { font-weight: 600; color: rgba(0,0,0,0.95); }
+  .yes { color: #1aae39; font-weight: 600; }
+  .no { color: #a39e98; }
+  .note { margin-top: 22px; display: flex; gap: 16px; }
+  .pill { background: #ffffff; border: 1px solid #e6e6e6; border-radius: 9999px; padding: 8px 18px; font-size: 15px; color: #31302e; }
+  .pill strong { color: #0075de; font-weight: 700; }
+  .src { margin-top: 18px; font-size: 13px; color: #a39e98; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">竞品对比</div>
+    <h1>更便宜，也更全</h1>
+    <table>
+      <tr><th style="width:30%;"></th><th class="fp" style="width:24%;">FlowPilot</th><th style="width:23%;">Motion</th><th style="width:23%;">Reclaim</th></tr>
+      <tr><td>价格（每人每月）</td><td class="fp">$12</td><td>约 $20（贵 ~67%）</td><td>与 FlowPilot 相近</td></tr>
+      <tr><td>自动会议纪要 + 待办分发</td><td class="fp"><span class="yes">✓ 支持</span></td><td><span class="no">—</span></td><td><span class="no">✗ 不支持</span></td></tr>
+      <tr><td>智能任务分配（负载 × 技能）</td><td class="fp"><span class="yes">✓ 支持</span></td><td><span class="yes">✓ 支持</span></td><td><span class="yes">✓ 支持</span></td></tr>
+      <tr><td>周报聚合（Slack / GitHub / Jira）</td><td class="fp"><span class="yes">✓ 支持</span></td><td><span class="no">—</span></td><td><span class="no">—</span></td></tr>
+    </table>
+    <div class="note">
+      <div class="pill">相比 Motion：同类能力，价格<strong>便宜 40%</strong></div>
+      <div class="pill">相比 Reclaim：多出完整的<strong>会议纪要</strong>能力</div>
+    </div>
+    <div class="src">来源：FlowPilot 官方定价与竞品公开定价对比，2026</div>
+  </div>
+</body>
+</html>

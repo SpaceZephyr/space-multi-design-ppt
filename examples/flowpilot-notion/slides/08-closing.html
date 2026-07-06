@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1280px; height: 720px; overflow: hidden; }
+  body {
+    background: #f6f5f4; color: rgba(0,0,0,0.95);
+    font-family: Inter, "PingFang SC", "Noto Sans SC", "Microsoft YaHei", -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  .slide { position: relative; width: 1280px; height: 720px; padding: 64px 96px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+  .star { position: absolute; border-radius: 9999px; }
+  h1 { font-size: 60px; font-weight: 700; line-height: 1.08; letter-spacing: -1.875px; max-width: 900px; }
+  h1 .hl { color: #0075de; }
+  .sub { margin-top: 24px; font-size: 20px; line-height: 1.6; color: #615d59; max-width: 720px; }
+  .ctas { margin-top: 44px; display: flex; gap: 16px; align-items: center; }
+  .btn-primary {
+    background: #0075de; color: #ffffff; font-size: 18px; font-weight: 500; line-height: 1.5;
+    border-radius: 9999px; padding: 14px 34px;
+  }
+  .btn-secondary {
+    background: #ffffff; color: rgba(0,0,0,0.95); font-size: 18px; font-weight: 500; line-height: 1.5;
+    border-radius: 9999px; padding: 14px 34px;
+    box-shadow: rgba(0,0,0,0.01) 0 0.175px 1.041px, rgba(0,0,0,0.02) 0 0.8px 2.925px, rgba(0,0,0,0.027) 0 2.025px 7.847px, rgba(0,0,0,0.04) 0 4px 18px;
+  }
+  .foot { position: absolute; bottom: 52px; font-size: 14px; color: #a39e98; }
+  .foot b { color: #31302e; font-weight: 600; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="star" style="top:110px; left:180px; width:12px; height:12px; background:#d6b6f6;"></div>
+    <div class="star" style="top:200px; right:200px; width:10px; height:10px; background:#ff64c8;"></div>
+    <div class="star" style="bottom:190px; left:260px; width:8px; height:8px; background:#2a9d99;"></div>
+    <div class="star" style="bottom:150px; right:300px; width:12px; height:12px; background:#dd5b00;"></div>
+    <div class="star" style="top:320px; left:110px; width:8px; height:8px; background:#62aef0;"></div>
+
+    <h1>本周，就把那 <span class="hl">5.5 小时</span><br>省出来</h1>
+    <p class="sub">14 天免费试用，全功能开放，10 分钟接入 Slack、GitHub 和 Jira——第一次周会结束，你就能看到第一份自动纪要。</p>
+    <div class="ctas">
+      <div class="btn-primary">免费试用 FlowPilot</div>
+      <div class="btn-secondary">预约产品演示</div>
+    </div>
+    <div class="foot"><b>flowpilot.ai</b> · hello@flowpilot.ai</div>
+  </div>
+</body>
+</html>

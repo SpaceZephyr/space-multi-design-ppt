@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1280px; height: 720px; overflow: hidden; }
+  body {
+    background: #f6f5f4; /* canvas-soft 暖纸白 */
+    color: rgba(0,0,0,0.95); /* ink @95% */
+    font-family: Inter, "PingFang SC", "Noto Sans SC", "Microsoft YaHei", -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  .slide { width: 1280px; height: 720px; padding: 72px 96px; display: flex; gap: 64px; align-items: center; }
+  .left { width: 520px; flex-shrink: 0; }
+  .eyebrow { display: inline-block; background: #ffffff; color: #0075de; font-size: 12px; font-weight: 600; letter-spacing: 0.125px; border-radius: 9999px; padding: 5px 12px; border: 1px solid #e6e6e6; margin-bottom: 24px; }
+  h1 { font-size: 46px; font-weight: 700; line-height: 1.15; letter-spacing: -1.4px; }
+  .lead { margin-top: 24px; font-size: 18px; line-height: 1.7; color: #615d59; }
+  .lead strong { color: #31302e; font-weight: 600; }
+  .right { flex: 1; display: flex; flex-direction: column; gap: 16px; }
+  .card {
+    background: #ffffff; border: 1px solid #e6e6e6; border-radius: 12px; padding: 22px 24px;
+    display: flex; gap: 16px; align-items: flex-start;
+    box-shadow: rgba(0,0,0,0.01) 0 0.175px 1.041px, rgba(0,0,0,0.02) 0 0.8px 2.925px, rgba(0,0,0,0.027) 0 2.025px 7.847px, rgba(0,0,0,0.04) 0 4px 18px;
+  }
+  .dot { width: 12px; height: 12px; border-radius: 9999px; flex-shrink: 0; margin-top: 7px; }
+  .card h3 { font-size: 20px; font-weight: 600; line-height: 1.4; letter-spacing: -0.125px; }
+  .card p { margin-top: 6px; font-size: 15px; line-height: 1.55; color: #615d59; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="left">
+      <div class="eyebrow">为什么是现在</div>
+      <h1>小团队最贵的成本，是被流程吃掉的时间</h1>
+      <p class="lead">10–50 人的团队没有专职 PMO：会议、分派、汇报这些"胶水工作"落在每个人头上，<strong>信息散落在 Slack、GitHub 和 Jira 里</strong>，拼起来靠人肉。</p>
+    </div>
+    <div class="right">
+      <div class="card">
+        <div class="dot" style="background:#ff64c8;"></div>
+        <div><h3>会议开完就忘</h3><p>纪要靠自觉，待办没人认领，下周同一件事再开一次会。</p></div>
+      </div>
+      <div class="card">
+        <div class="dot" style="background:#dd5b00;"></div>
+        <div><h3>任务分派凭感觉</h3><p>谁闲谁上、谁吼谁上——负载和技能匹配全靠管理者脑内记账。</p></div>
+      </div>
+      <div class="card">
+        <div class="dot" style="background:#2a9d99;"></div>
+        <div><h3>周报是每周的手工活</h3><p>周五下午全员停工翻聊天记录、扒 commit，只为拼一份进展汇报。</p></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

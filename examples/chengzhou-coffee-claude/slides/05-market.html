@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500&family=Noto+Sans+SC:wght@400;500&family=Noto+Serif+SC:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1280px; height:720px; overflow:hidden; }
+  body { background:#faf9f5; color:#141413; font-family:'Inter','Noto Sans SC','PingFang SC',sans-serif; }
+  .slide { width:1280px; height:720px; padding:64px 96px; display:flex; }
+  .left { width:55%; display:flex; flex-direction:column; justify-content:center; padding-right:48px; }
+  .eyebrow { font-size:12px; font-weight:500; letter-spacing:1.5px; color:#cc785c; margin-bottom:16px; }
+  h2 { font-family:'Cormorant Garamond','Noto Serif SC','Songti SC',serif; font-size:44px; font-weight:500; line-height:1.15; letter-spacing:-1px; }
+  .big { margin-top:40px; font-family:'Cormorant Garamond','Noto Serif SC',serif; font-size:150px; font-weight:500; letter-spacing:-1.5px; line-height:1; color:#cc785c; }
+  .big small { font-size:56px; letter-spacing:-1px; }
+  .big-label { margin-top:12px; font-size:18px; font-weight:500; color:#3d3d3a; }
+  .note { margin-top:24px; font-size:15px; line-height:1.7; color:#6c6a64; max-width:480px; }
+  .right { width:45%; display:flex; flex-direction:column; justify-content:center; }
+  .grid-card { background:#f5f0e8; /* token: surface-soft */ border:1px solid #e6dfd8; border-radius:16px; /* token: rounded.xl */ padding:32px; }
+  .dots { display:grid; grid-template-columns:repeat(10,1fr); gap:14px; }
+  .dot { width:26px; height:26px; border-radius:9999px; background:#e8e0d2; /* token: surface-cream-strong */ }
+  .dot.on { background:#cc785c; }
+  .legend { margin-top:24px; display:flex; gap:24px; font-size:14px; font-weight:500; color:#6c6a64; }
+  .legend i { display:inline-block; width:12px; height:12px; border-radius:9999px; margin-right:8px; vertical-align:-1px; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="left">
+    <div class="eyebrow">市场 · 空间有多大</div>
+    <h2>50 座三线城市，一块 300 亿的空白市场</h2>
+    <div class="big">300<small> 亿元</small></div>
+    <div class="big-label">目标市场对标规模</div>
+    <p class="note">首批锁定 50 个三线城市——咖啡渗透率正在爬坡、精品供给几乎空白，正是从 12 家店走向区域连锁品牌的窗口期。</p>
+  </div>
+  <div class="right">
+    <div class="grid-card">
+      <div class="dots">
+        <div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+        <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+        <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+        <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+        <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+      </div>
+      <div class="legend">
+        <span><i style="background:#cc785c"></i>已进入城市（12 家店）</span>
+        <span><i style="background:#e8e0d2"></i>目标 50 城</span>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

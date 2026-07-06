@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1280px; height: 720px; overflow: hidden; }
+  body {
+    background: #f6f5f4; color: rgba(0,0,0,0.95);
+    font-family: Inter, "PingFang SC", "Noto Sans SC", "Microsoft YaHei", -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  .slide { width: 1280px; height: 720px; padding: 64px 96px; display: flex; flex-direction: column; }
+  .eyebrow { display: inline-block; align-self: flex-start; background: #ffffff; color: #0075de; font-size: 12px; font-weight: 600; letter-spacing: 0.125px; border-radius: 9999px; padding: 5px 12px; border: 1px solid #e6e6e6; margin-bottom: 20px; }
+  h1 { font-size: 44px; font-weight: 700; line-height: 1.1; letter-spacing: -1.2px; margin-bottom: 44px; }
+  .grid { display: flex; gap: 24px; flex: 1; }
+  .card {
+    flex: 1; background: #ffffff; border: 1px solid #e6e6e6; border-radius: 12px; overflow: hidden;
+    display: flex; flex-direction: column;
+    box-shadow: rgba(0,0,0,0.01) 0 0.175px 1.041px, rgba(0,0,0,0.02) 0 0.8px 2.925px, rgba(0,0,0,0.027) 0 2.025px 7.847px, rgba(0,0,0,0.04) 0 4px 18px;
+  }
+  .band { height: 96px; display: flex; align-items: center; justify-content: center; }
+  .band svg { width: 44px; height: 44px; }
+  .body { padding: 24px; display: flex; flex-direction: column; flex: 1; }
+  .num { font-size: 12px; font-weight: 600; letter-spacing: 0.125px; color: #a39e98; margin-bottom: 8px; }
+  .card h3 { font-size: 22px; font-weight: 700; line-height: 1.27; letter-spacing: -0.25px; }
+  .card p { margin-top: 10px; font-size: 15.5px; line-height: 1.6; color: #615d59; flex: 1; }
+  .tag { margin-top: 16px; align-self: flex-start; font-size: 13px; font-weight: 600; color: #0075de; background: rgba(0,117,222,0.07); border-radius: 9999px; padding: 4px 12px; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">核心功能</div>
+    <h1>三件"胶水工作"，全部交给 AI</h1>
+    <div class="grid">
+      <div class="card">
+        <div class="band" style="background:#d6b6f6;">
+          <svg viewBox="0 0 44 44" fill="none"><rect x="8" y="6" width="28" height="32" rx="4" fill="#ffffff"/><path d="M14 15h16M14 21h16M14 27h10" stroke="#391c57" stroke-width="2.4" stroke-linecap="round"/></svg>
+        </div>
+        <div class="body">
+          <div class="num">01 · 自动会议纪要</div>
+          <h3>会后 3 分钟，纪要与待办自动到位</h3>
+          <p>结束会议即生成结构化纪要——结论、决议、行动项分栏清晰，待办自动分发给对应负责人，无需任何人整理。</p>
+          <div class="tag">3 分钟生成</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="band" style="background:#62aef0;">
+          <svg viewBox="0 0 44 44" fill="none"><circle cx="14" cy="14" r="6" fill="#ffffff"/><circle cx="32" cy="14" r="6" fill="#ffffff" opacity=".75"/><circle cx="23" cy="31" r="6" fill="#ffffff" opacity=".9"/><path d="M17 18l4 8M29 18l-4 8" stroke="#213183" stroke-width="2.2" stroke-linecap="round"/></svg>
+        </div>
+        <div class="body">
+          <div class="num">02 · 智能任务分配</div>
+          <h3>按负载与技能，自动推荐负责人</h3>
+          <p>实时读取每位成员的在办任务量和技能标签，新任务进来即推荐最合适的人——不再"谁闲谁上"。</p>
+          <div class="tag">负载 × 技能匹配</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="band" style="background:#2a9d99;">
+          <svg viewBox="0 0 44 44" fill="none"><rect x="8" y="24" width="6" height="12" rx="2" fill="#ffffff"/><rect x="19" y="16" width="6" height="20" rx="2" fill="#ffffff" opacity=".9"/><rect x="30" y="9" width="6" height="27" rx="2" fill="#ffffff" opacity=".8"/></svg>
+        </div>
+        <div class="body">
+          <div class="num">03 · 周报自动生成</div>
+          <h3>Slack、GitHub、Jira，一键聚合成周报</h3>
+          <p>自动抓取三大工具里的每周进展，按项目归并成一份可直接发出的周报，周五下午不再是"汇报日"。</p>
+          <div class="tag">3 大数据源聚合</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

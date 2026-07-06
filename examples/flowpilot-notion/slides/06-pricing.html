@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1280px; height: 720px; overflow: hidden; }
+  body {
+    background: #f6f5f4; color: rgba(0,0,0,0.95);
+    font-family: Inter, "PingFang SC", "Noto Sans SC", "Microsoft YaHei", -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  .slide { width: 1280px; height: 720px; padding: 64px 96px 56px; display: flex; flex-direction: column; }
+  .eyebrow { display: inline-block; align-self: flex-start; background: #ffffff; color: #0075de; font-size: 12px; font-weight: 600; letter-spacing: 0.125px; border-radius: 9999px; padding: 5px 12px; border: 1px solid #e6e6e6; margin-bottom: 20px; }
+  h1 { font-size: 44px; font-weight: 700; line-height: 1.1; letter-spacing: -1.2px; margin-bottom: 40px; }
+  .row { display: flex; gap: 24px; flex: 1; }
+  .plan {
+    flex: 1; border-radius: 16px; padding: 36px 38px; display: flex; flex-direction: column;
+  }
+  .plan.month { background: #f6f5f4; border: 1px solid #e6e6e6; background: #ffffff; }
+  .plan.year { background: rgba(0,0,0,0.95); color: #ffffff; position: relative;
+    box-shadow: rgba(0,0,0,0.01) 0 0.175px 1.041px, rgba(0,0,0,0.02) 0 0.8px 2.925px, rgba(0,0,0,0.027) 0 2.025px 7.847px, rgba(0,0,0,0.05) 0 23px 52px; }
+  .plan-name { font-size: 20px; font-weight: 600; letter-spacing: -0.125px; }
+  .price { margin-top: 22px; font-size: 72px; font-weight: 700; line-height: 1.0; letter-spacing: -2.125px; }
+  .price small { font-size: 20px; font-weight: 500; letter-spacing: 0; color: #615d59; margin-left: 6px; }
+  .year .price small { color: rgba(255,255,255,0.6); }
+  .desc { margin-top: 18px; font-size: 16px; line-height: 1.6; color: #615d59; }
+  .year .desc { color: rgba(255,255,255,0.72); }
+  ul { margin-top: 22px; list-style: none; }
+  li { font-size: 15.5px; line-height: 1.5; padding: 7px 0; display: flex; gap: 10px; align-items: baseline; }
+  li .tick { color: #1aae39; font-weight: 700; }
+  .year li .tick { color: #62aef0; }
+  .save { position: absolute; top: 32px; right: 34px; background: #0075de; color: #ffffff; font-size: 12px; font-weight: 600; letter-spacing: 0.125px; border-radius: 9999px; padding: 6px 14px; }
+  .strike { text-decoration: line-through; color: rgba(255,255,255,0.4); font-size: 26px; font-weight: 500; letter-spacing: -0.5px; margin-right: 10px; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">定价</div>
+    <h1>每人每月，一顿工作餐的价格</h1>
+    <div class="row">
+      <div class="plan month">
+        <div class="plan-name">月付</div>
+        <div class="price">$12<small>/ 人 / 月</small></div>
+        <p class="desc">随用随停，适合先小范围试点的团队。</p>
+        <ul>
+          <li><span class="tick">✓</span>三大核心功能全量开放</li>
+          <li><span class="tick">✓</span>Slack / GitHub / Jira 集成</li>
+          <li><span class="tick">✓</span>不限会议数与周报数</li>
+        </ul>
+      </div>
+      <div class="plan year">
+        <div class="save">年付 8 折</div>
+        <div class="plan-name">年付</div>
+        <div class="price"><span class="strike">$12</span>$9.6<small>/ 人 / 月</small></div>
+        <p class="desc">全团队铺开的最优解：30 人团队一年省 $864。</p>
+        <ul>
+          <li><span class="tick">✓</span>月付版全部能力</li>
+          <li><span class="tick">✓</span>优先接入新功能（移动端 / API）</li>
+          <li><span class="tick">✓</span>专属客户成功支持</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

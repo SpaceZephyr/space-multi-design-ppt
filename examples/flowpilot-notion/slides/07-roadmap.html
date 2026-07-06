@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1280px; height: 720px; overflow: hidden; }
+  body {
+    background: #f6f5f4; color: rgba(0,0,0,0.95);
+    font-family: Inter, "PingFang SC", "Noto Sans SC", "Microsoft YaHei", -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  .slide { width: 1280px; height: 720px; padding: 72px 96px; display: flex; flex-direction: column; }
+  .eyebrow { display: inline-block; align-self: flex-start; background: #ffffff; color: #0075de; font-size: 12px; font-weight: 600; letter-spacing: 0.125px; border-radius: 9999px; padding: 5px 12px; border: 1px solid #e6e6e6; margin-bottom: 20px; }
+  h1 { font-size: 44px; font-weight: 700; line-height: 1.1; letter-spacing: -1.2px; margin-bottom: 72px; }
+  .timeline { position: relative; flex: 1; }
+  .track { position: absolute; top: 9px; left: 40px; right: 40px; height: 2px; background: #e6e6e6; }
+  .track-done { position: absolute; top: 9px; left: 40px; width: 26%; height: 2px; background: #0075de; }
+  .nodes { display: flex; gap: 24px; position: relative; }
+  .node { flex: 1; }
+  .pin { width: 20px; height: 20px; border-radius: 9999px; background: #ffffff; border: 2px solid #e6e6e6; margin-bottom: 24px; }
+  .pin.now { background: #0075de; border-color: #0075de; box-shadow: 0 0 0 6px rgba(0,117,222,0.14); }
+  .card { background: #ffffff; border: 1px solid #e6e6e6; border-radius: 12px; padding: 24px;
+    box-shadow: rgba(0,0,0,0.01) 0 0.175px 1.041px, rgba(0,0,0,0.02) 0 0.8px 2.925px, rgba(0,0,0,0.027) 0 2.025px 7.847px, rgba(0,0,0,0.04) 0 4px 18px; }
+  .when { font-size: 12px; font-weight: 600; letter-spacing: 0.125px; margin-bottom: 10px; }
+  .card h3 { font-size: 22px; font-weight: 700; line-height: 1.27; letter-spacing: -0.25px; }
+  .card p { margin-top: 10px; font-size: 15.5px; line-height: 1.6; color: #615d59; }
+  .chip { display: inline-block; border-radius: 9999px; padding: 4px 12px; }
+  .chip.done { background: rgba(0,117,222,0.08); color: #0075de; }
+  .chip.q3 { background: rgba(221,91,0,0.08); color: #dd5b00; }
+  .chip.q4 { background: rgba(42,157,153,0.1); color: #2a9d99; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow">路线图</div>
+    <h1>下一步：走出桌面，长成平台</h1>
+    <div class="timeline">
+      <div class="track"></div><div class="track-done"></div>
+      <div class="nodes">
+        <div class="node">
+          <div class="pin now"></div>
+          <div class="card">
+            <div class="when"><span class="chip done">现在 · 已上线 6 个月</span></div>
+            <h3>桌面端产品站稳</h3>
+            <p>纪要、分派、周报三大功能全量可用，1,200 个付费团队在跑。</p>
+          </div>
+        </div>
+        <div class="node">
+          <div class="pin"></div>
+          <div class="card">
+            <div class="when"><span class="chip q3">2026 Q3</span></div>
+            <h3>移动端上线</h3>
+            <p>会议纪要与待办随手可查、可确认——把 FlowPilot 装进口袋。</p>
+          </div>
+        </div>
+        <div class="node">
+          <div class="pin"></div>
+          <div class="card">
+            <div class="when"><span class="chip q4">2026 Q4</span></div>
+            <h3>开放 API</h3>
+            <p>让团队把纪要与周报数据接入自己的系统，从工具长成平台。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
