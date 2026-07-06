@@ -1,4 +1,4 @@
-# Space Design Slide Codex
+# Space Multi Design PPT
 
 > 品牌设计风格驱动的 AI 幻灯片生成 Skill —— 把任意内容变成带顶级品牌设计语言的 Slide。
 
@@ -41,7 +41,7 @@
 **Claude Code**：把本仓库克隆到 skills 目录
 
 ```bash
-git clone https://github.com/SpaceZephyr/space-design-slide-codex.git ~/.codex/skills/space-design-slide-codex
+git clone https://github.com/SpaceZephyr/space-multi-design-ppt.git ~/.codex/skills/space-multi-design-ppt
 ```
 
 **Claude Cowork / Claude.ai**：把仓库打包上传为 Skill（Settings → Capabilities → Skills）。

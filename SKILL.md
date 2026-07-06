@@ -1,9 +1,9 @@
 ---
-name: space-design-slide-codex
+name: space-multi-design-ppt
 description: 品牌设计风格驱动的幻灯片生成器。将用户内容智能匹配到 62 个顶级品牌设计系统（Apple、Notion、Claude、Stripe、Linear、Tesla 等），拉取真实品牌设计规范（DESIGN.md）后生成像素级还原品牌风格的 HTML 幻灯片，可导出 PPTX/PDF。用户要求"做 PPT"、"做个 slide"、"生成演示文稿"、"design slide"、"用 XX 风格做幻灯片"、"把这篇文章做成 deck"、提到 presentation/keynote/路演/汇报材料，或发来一段内容希望变成幻灯片时，都应使用本 skill——即使用户没有提到"品牌"或"设计风格"。
 ---
 
-# Space Design Slide Codex
+# Space Multi Design PPT
 
 把任意内容变成带顶级品牌设计语言的幻灯片。核心思路：不靠凭空发挥的"好看"，而是通过 getdesign.md 拉取 62 个真实品牌的精确设计规范（颜色、字体、间距、圆角、阴影的具体数值），用这些 token 驱动 HTML 幻灯片渲染，保证风格可信且一致。
 
