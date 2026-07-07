@@ -1,37 +1,25 @@
-# Space Multi Design PPT
+<h1 align="center">多风格品牌 PPT 生成器</h1>
 
-> 品牌设计风格驱动的 AI 幻灯片生成 Skill —— 把任意内容变成带顶级品牌设计语言的 Slide，支持输出 HTML / PPTX / PDF。
+<p align="center"><code>space-multi-design-ppt.skill</code></p>
 
-结合 [brand-design-md](https://github.com/SpaceZephyr/brand-design-md)（62 个真实品牌设计规范）与 [design-buddy/space-slide-deck](https://github.com/SpaceZephyr/design-buddy/tree/main/space-slide-deck)（幻灯片生成流程）。核心理念：**不靠凭空发挥的"好看"**——通过 [getdesign.md](https://getdesign.md) 拉取 Apple、Notion、Claude、Stripe、Linear、Tesla 等品牌的精确设计 token（颜色、字体、字距、圆角、阴影的具体数值），用真实规范驱动幻灯片渲染。
+<p align="center"><em>「同一份内容，可以长成 62 种品牌气质的演示稿」</em></p>
 
-## 它是怎么工作的
+<p align="center">
+  <img alt="Agent Skills Standard" src="https://img.shields.io/badge/Agent%20Skills-Standard-5aa524?style=for-the-badge">
+  <img alt="Brand Systems" src="https://img.shields.io/badge/Brand%20Systems-62-c8a500?style=for-the-badge">
+  <img alt="Output" src="https://img.shields.io/badge/Output-HTML%20%C2%B7%20PPTX%20%C2%B7%20PDF-1888c8?style=for-the-badge">
+  <img alt="Runtime" src="https://img.shields.io/badge/Runtime-Claude%20Code%20%C2%B7%20Codex%20%C2%B7%20Cursor-7b2bd9?style=for-the-badge">
+</p>
 
-```
-你发内容 ──► 内容分析 ──► 风格决策 ──► 输出格式确认 ──► 拉取品牌 DESIGN.md ──► 生成 Slide
-                              │
-             ┌────────────────┴────────────────┐
-             │ 你指定了风格（"用 Stripe 风格"）  │ 直接生成
-             │ 你没指定风格                     │ 推荐 5 个匹配品牌（各一句话介绍）
-             │                                 │ + 第 6 项「智能匹配」由 AI 选定并说明理由
-             └─────────────────────────────────┘
-```
+多风格品牌 PPT 生成器（Space Multi Design PPT）是一个品牌设计风格驱动的 AI 幻灯片生成 Skill。
 
-## 输出格式
+它把一段文章、BP、周报、产品介绍或课程内容，转成带真实品牌设计语言的演示稿。你可以指定 Apple、Notion、Claude、Stripe、Linear、Tesla 等风格，也可以让它根据内容智能推荐 5 种匹配风格，并提供第 6 个「智能匹配」选项。
 
-| 格式 | 适合场景 | 说明 |
-|---|---|---|
-| `deck.html` | 线上演示、追求视觉效果 | 单文件网页幻灯片，支持翻页、全屏、网格总览 |
-| `.pptx` | 需要二次编辑、正式交付 | python-pptx 原生构建，文本框和形状可编辑 |
-| `.pdf` | 归档、发送、打印 | 从 HTML 幻灯片导出，适合固定版式交付 |
+它不是让 AI 随机做一套“看起来还行”的 PPT。
 
-**5+1 推荐示例**（发一份咖啡连锁 BP 后，Skill 的实际回复）：
+它会先理解内容，再选择设计系统、输出格式和页面结构。核心依赖 [brand-design-md](https://github.com/SpaceZephyr/brand-design-md) 的 62 个真实品牌规范，以及 [getdesign.md](https://getdesign.md) 的 DESIGN.md token，让颜色、字体、字距、圆角和视觉节奏都有来源。
 
-> 1. **Stripe** — 紫色渐变 + 300 字重优雅排版，投资人看惯的金融科技质感
-> 2. **Claude** — 奶油暖底 + 赭石强调色，和咖啡品牌的暖调天然契合
-> 3. **Airbnb** — 珊瑚暖色 + 圆润 UI，适合讲社区与复购故事
-> 4. **Shopify** — 深色电影感 + 荧光绿，创业增长叙事的现代锋利感
-> 5. **Apple** — 极致留白，让 62% 毛利这些数字自己说话
-> 6. **智能匹配** — 我根据内容气质直接选择最合适的风格（含混搭）
+看效果 · 风格墙 · 安装 · 使用 · 输出格式 · 工作原理 · 诚实边界
 
 ## 案例展示
 
@@ -55,13 +43,25 @@
 
 ## 安装
 
-**Claude Code**：把本仓库克隆到 skills 目录
+多风格品牌 PPT 生成器基于开放的 Agent Skills 协议，可在 Claude Code、Codex、Cursor 等兼容 runtime 中运行。
+
+### 方式一：让 Agent 安装
+
+打开你正在用的 agent，告诉它：
+
+```text
+帮我安装这个 skill：https://github.com/SpaceZephyr/space-multi-design-ppt
+```
+
+### 方式二：手动安装
+
+把本仓库克隆到 skills 目录：
 
 ```bash
 git clone https://github.com/SpaceZephyr/space-multi-design-ppt.git ~/.codex/skills/space-multi-design-ppt
 ```
 
-**Claude Cowork / Claude.ai**：把仓库打包上传为 Skill（Settings → Capabilities → Skills）。
+Claude Cowork / Claude.ai 可以把仓库打包上传为 Skill（Settings → Capabilities → Skills）。
 
 依赖：Node.js（`npx getdesign` 拉取设计规范）；输出 PPTX 需 `pip install python-pptx Pillow`；输出 PDF 需 Playwright/Chromium。
 
@@ -75,11 +75,41 @@ git clone https://github.com/SpaceZephyr/space-multi-design-ppt.git ~/.codex/ski
 Notion 配色 + Linear 排版，做个路演 PPT    # → 混搭风格
 ```
 
+## 输出格式
+
+| 格式 | 适合场景 | 说明 |
+| --- | --- | --- |
+| `deck.html` | 线上演示、追求视觉效果 | 单文件网页幻灯片，支持翻页、全屏、网格总览 |
+| `.pptx` | 需要二次编辑、正式交付 | python-pptx 原生构建，文本框和形状可编辑 |
+| `.pdf` | 归档、发送、打印 | 从 HTML 幻灯片导出，适合固定版式交付 |
+
+## 它能做什么
+
+| 能力 | 说明 |
+| --- | --- |
+| 内容转演示稿 | 把文章、BP、周报、产品介绍、课程内容转成完整 Slide |
+| 智能风格推荐 | 未指定风格时，推荐 5 种匹配品牌 + 1 个智能匹配选项 |
+| 指定品牌风格 | 支持 Apple、Notion、Claude、Stripe、Linear、Tesla 等 62 种品牌设计语言 |
+| 多格式交付 | 输出 `deck.html`、可编辑 `.pptx`，或固定版式 `.pdf` |
+| 可追溯设计 token | 颜色、字体、字距、圆角、阴影来自 DESIGN.md，而不是凭感觉猜 |
+
 ## 支持的 62 个品牌风格
 
 Apple · Claude · Cursor · ElevenLabs · Figma · Framer · Lovable · Meta · MiniMax · Mintlify · Mistral · Notion · Ollama · OpenCode · PostHog · Raycast · Replicate · Resend · Runway · Sanity · Sentry · Supabase · Superhuman · Together AI · Vercel · VoltAgent · Warp · Webflow · X.AI · Zapier · Airtable · Cal.com · Clay · ClickHouse · Cohere · Composio · Expo · HashiCorp · IBM · Intercom · Linear · Miro · MongoDB · NVIDIA · Pinterest · Stripe · Binance · Coinbase · Kraken · Revolut · Wise · Airbnb · BMW · Ferrari · Lamborghini · Nike · Renault · Shopify · SpaceX · Spotify · Tesla · Uber
 
 每个品牌的一句话风格与内容匹配标签见 [references/brand-registry.md](references/brand-registry.md)。
+
+## 工作原理
+
+多风格品牌 PPT 生成器会把一次幻灯片任务拆成 5 层：
+
+| 层次 | 说明 |
+| --- | --- |
+| 内容理解 | 提取核心信息、受众、支撑点和适合的页数 |
+| 风格决策 | 用户指定则直接使用；未指定则按内容推荐 5+1 个品牌风格 |
+| token 获取 | 通过 getdesign.md 拉取品牌 DESIGN.md，提取颜色、字体、间距和组件气质 |
+| 页面生成 | HTML 模式生成 1280×720 独立页面；PPTX 模式生成可编辑文本框和形状 |
+| 交付检查 | 合成 deck.html，或生成 PPTX/PDF，并检查文字溢出、重叠和版式问题 |
 
 ## 仓库结构
 
@@ -107,6 +137,13 @@ Apple · Claude · Cursor · ElevenLabs · Figma · Framer · Lovable · Meta ·
 |---|---|---|
 | 断言通过率（真实品牌 token / 推荐流程 / 叙事标题 / 数据准确） | **100%** | 20% |
 | 典型差异 | 拉取真实 DESIGN.md，精确到 `-2.125px` 字距 | 凭记忆猜色值，标签式标题，无风格推荐 |
+
+## 诚实边界
+
+- 品牌风格是基于公开 DESIGN.md token 的设计语言迁移，不是品牌官方模板。
+- HTML 的视觉还原更强；PPTX 的优势是可编辑，但复杂渐变和细节会做合理近似。
+- 如果 getdesign.md 拉取失败，会使用内置品牌注册表做近似还原。
+- PDF 导出依赖 Playwright/Chromium；PPTX 原生构建不依赖浏览器。
 
 ## 致谢
 
